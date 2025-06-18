@@ -8,7 +8,7 @@ export const Projects = () => {
       title: "Rental Payment System - Zoyer",
       description:
         "Worked on a rental payment management system as part of the Zoyer platform. Implemented features like approval workflow, agreement creation, invoice generation, receipt tracking, landlord-tranche mappings, and third-party API integrations using Spring Boot and PostgreSQL.",
-      image: "/public/project1.jpg",
+      image: "/project1.jpg",
       technologies: [
         "Spring Boot",
         "Java",
@@ -26,7 +26,7 @@ export const Projects = () => {
       title: "Social Media Application",
       description:
         "A full-featured social media platform built using the MERN stack. Integrated real-time chat and notification system using WebSockets. Features include user authentication, profile management, posts, likes, comments, and live messaging.",
-      image: "/public/project2.png",
+      image: "/project2.png",
       technologies: [
         "React.js",
         "Node.js",

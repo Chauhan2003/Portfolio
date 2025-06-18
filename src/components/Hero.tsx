@@ -77,7 +77,7 @@ export const Hero = () => {
               <div className="relative terminal-window overflow-hidden">
                 <div className="pt-8">
                   <img
-                    src="/public/profile.jpg"
+                    src="/profile.jpg"
                     alt="Profile"
                     className="w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 object-cover hover:scale-105 transition-all duration-500 filter brightness-110 contrast-110"
                   />
