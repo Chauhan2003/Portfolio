@@ -17,12 +17,12 @@ export const Hero = () => {
           {/* Content Section */}
           <ScrollAnimation
             animationType="fade-right"
-            className="text-center lg:text-left space-y-6"
+            className="text-left lg:text-left space-y-6"
           >
             <div className="space-y-4">
               <div className="inline-block">
                 <div className="terminal-window p-4 mb-6">
-                  <div className="pt-6 ">
+                  <div className="pt-6 text-sm sm:text-md">
                     <span className="syntax-comment">// Hello World!</span>
                     <br />
                     <span className="syntax-keyword">const</span>{" "}
@@ -33,7 +33,7 @@ export const Hero = () => {
                 </div>
               </div>
 
-              <h1 className="text-4xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-white leading-tight font-mono">
+              <h1 className="text-3xl md:text-3xl text-center md:text-left lg:text-4xl font-bold text-white leading-tight font-mono">
                 <span className="bg-gradient-to-r from-green-400 via-blue-400 to-purple-400 bg-clip-text text-transparent">
                   &lt;Gagan Chauhan /&gt;
                 </span>
@@ -41,13 +41,13 @@ export const Hero = () => {
 
               <div className="code-block p-4">
                 <div className="pt-6">
-                  <div className="animate-typewriter text-green-400 font-mono text-xl sm:text-2xl">
+                  <div className="animate-typewriter text-green-400 font-mono text-lg sm:text-2xl">
                     Software Engineer
                   </div>
                 </div>
               </div>
 
-              <p className="text-base sm:text-lg text-gray-300 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-mono">
+              <p className="text-base sm:text-lg hidden sm:block text-gray-300 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-mono">
                 <span className="syntax-comment">/*</span>
                 <br />
                 &nbsp;&nbsp;Passionate about creating innovative solutions
@@ -59,8 +59,12 @@ export const Hero = () => {
             </div>
 
             {/* CTA Button */}
-            <ScrollAnimation animationType="fade-up" delay={400}>
-              <Button className="bg-gradient-to-r from-green-600 via-blue-600 to-purple-600 hover:from-green-700 hover:via-blue-700 hover:to-purple-700 text-white px-8 py-4 rounded-lg transition-all duration-300 hover:scale-105 hover-glow shadow-2xl text-lg font-medium font-mono">
+            <ScrollAnimation
+              animationType="fade-up"
+              delay={400}
+              className="flex justify-center sm:justify-start"
+            >
+              <Button className="bg-gradient-to-r from-green-600 via-blue-600 to-purple-600 hover:from-green-700 hover:via-blue-700 hover:to-purple-700 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg transition-all duration-300 hover:scale-105 hover-glow shadow-2xl text-md sm:text-lg font-medium font-mono">
                 <Download className="h-5 w-5 mr-2" />
                 ./download-resume.pdf
               </Button>
@@ -88,7 +92,7 @@ export const Hero = () => {
               <div className="absolute -top-4 -right-4 bg-green-500/20 backdrop-blur-sm border border-green-500/30 rounded-lg p-2 animate-code-flicker">
                 <Terminal className="h-6 w-6 text-green-400" />
               </div>
-              <div className="absolute bottom-2 -left-4 terminal-window px-4 pt-8 pb-2 animate-bounce">
+              <div className="absolute bottom-2 -left-4 terminal-window px-4 pt-7 sm:pt-8 pb-2 animate-bounce">
                 <span className="text-green-400 font-mono text-sm">
                   {"> whoami"}
                 </span>

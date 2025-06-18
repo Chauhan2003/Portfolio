@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 export const Projects = () => {
   const projects = [
     {
-      title: "Rental Payment System - Zoyer",
+      title: "Rental Payment System",
       description:
         "Worked on a rental payment management system as part of the Zoyer platform. Implemented features like approval workflow, agreement creation, invoice generation, receipt tracking, landlord-tranche mappings, and third-party API integrations using Spring Boot and PostgreSQL.",
       image: "/project1.jpg",
@@ -45,10 +45,10 @@ export const Projects = () => {
   return (
     <section
       id="projects"
-      className="py-16 sm:py-20 lg:py-24 px-4 lg:px-8 bg-black/20"
+      className="py-16 sm:py-20 lg:py-24 px-4 lg:px-8 bg-black/20 overflow-hidden"
     >
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-center text-white mb-12 lg:mb-16">
+        <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold text-center text-white mb-12 lg:mb-16">
           Featured{" "}
           <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent">
             Projects
@@ -71,7 +71,7 @@ export const Projects = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 {project.featured && (
                   <div className="absolute top-4 left-4">
-                    <span className="bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 text-white px-3 py-1 rounded-full text-sm font-medium shadow-lg">
+                    <span className="bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 text-white px-3 py-1 rounded-full text-xs font-medium shadow-lg">
                       Featured
                     </span>
                   </div>
@@ -79,11 +79,11 @@ export const Projects = () => {
               </div>
 
               <div className="p-6 sm:p-8">
-                <h3 className="text-xl sm:text-2xl font-bold text-white mb-4 group-hover:text-purple-300 transition-colors duration-300">
+                <h3 className="text-lg sm:text-2xl font-bold text-white mb-4 group-hover:text-purple-300 transition-colors duration-300">
                   {project.title}
                 </h3>
 
-                <p className="text-gray-300 mb-6 leading-relaxed text-sm sm:text-base">
+                <p className="text-gray-300 mb-6 leading-relaxed text-xs sm:text-base">
                   {project.description}
                 </p>
 
@@ -91,7 +91,7 @@ export const Projects = () => {
                   {project.technologies.map((tech) => (
                     <span
                       key={tech}
-                      className="px-3 py-1 sm:px-4 bg-gradient-to-r from-purple-600/30 via-pink-600/30 to-blue-600/30 text-purple-200 text-sm rounded-full border border-purple-500/30 hover:from-purple-600/40 hover:via-pink-600/40 hover:to-blue-600/40 transition-all duration-300"
+                      className="px-3 py-1 sm:px-4 bg-gradient-to-r from-purple-600/30 via-pink-600/30 to-blue-600/30 text-purple-200 text-xs rounded-full border border-purple-500/30 hover:from-purple-600/40 hover:via-pink-600/40 hover:to-blue-600/40 transition-all duration-300"
                     >
                       {tech}
                     </span>
