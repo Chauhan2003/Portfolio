@@ -18,8 +18,7 @@ export const Projects = () => {
         "Flyway",
         "Git",
       ],
-      github: "#",
-      live: "#",
+      live: "https://dev-zoyer.zaggle.in",
       featured: true,
     },
     {
@@ -37,7 +36,7 @@ export const Projects = () => {
         "Git",
       ],
       github: "https://github.com/Chauhan2003/SocialBuzzy",
-      live: "#",
+      // live: "#",
       featured: true,
     },
   ];
@@ -99,36 +98,40 @@ export const Projects = () => {
                 </div>
 
                 <div className="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4">
-                  <Button
-                    asChild
-                    variant="outline"
-                    size="sm"
-                    className="border-purple-500/50 hover:border-purple-400 hover:bg-purple-500/20 transition-all duration-300 hover:scale-105"
-                  >
-                    <a
-                      href={project.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
+                  {project.github != null && (
+                    <Button
+                      asChild
+                      variant="outline"
+                      size="sm"
+                      className="border-purple-500/50 hover:border-purple-400 hover:bg-purple-500/20 transition-all duration-300 hover:scale-105"
                     >
-                      <Github className="h-4 w-4 mr-2" />
-                      View Code
-                    </a>
-                  </Button>
+                      <a
+                        href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <Github className="h-4 w-4 mr-2" />
+                        View Code
+                      </a>
+                    </Button>
+                  )}
 
-                  <Button
-                    asChild
-                    size="sm"
-                    className="bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 hover:from-purple-700 hover:via-pink-700 hover:to-blue-700 transition-all duration-300 hover:scale-105"
-                  >
-                    <a
-                      href={project.live}
-                      target="_blank"
-                      rel="noopener noreferrer"
+                  {project.live != null && (
+                    <Button
+                      asChild
+                      size="sm"
+                      className="bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 hover:from-purple-700 hover:via-pink-700 hover:to-blue-700 transition-all duration-300 hover:scale-105"
                     >
-                      <ExternalLink className="h-4 w-4 mr-2" />
-                      Live Demo
-                    </a>
-                  </Button>
+                      <a
+                        href={project.live}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <ExternalLink className="h-4 w-4 mr-2" />
+                        Live Demo
+                      </a>
+                    </Button>
+                  )}
                 </div>
               </div>
             </div>

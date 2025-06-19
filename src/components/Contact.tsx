@@ -133,14 +133,21 @@ export const Contact = () => {
 
             <div className="flex flex-wrap gap-4 pt-6 justify-center sm:justify-start">
               {socialLinks.map((social) => (
-                <Button
+                <a
                   key={social.label}
-                  variant="outline"
-                  size="icon"
-                  className="rounded-full border-purple-500/50 hover:border-purple-500 hover:bg-purple-500/10 bg-transparent transition-all duration-300 hover:scale-110"
+                  href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={social.label}
                 >
-                  <social.icon className="h-5 w-5 text-white" />
-                </Button>
+                  <Button
+                    variant="outline"
+                    size="icon"
+                    className="rounded-full border-purple-500/50 hover:border-purple-500 hover:bg-purple-500/10 bg-transparent transition-all duration-300 hover:scale-110"
+                  >
+                    <social.icon className="h-5 w-5 text-white" />
+                  </Button>
+                </a>
               ))}
             </div>
           </div>
