@@ -36,7 +36,7 @@ export const Projects = () => {
         "Git",
       ],
       github: "https://github.com/Chauhan2003/SocialBuzzy",
-      // live: "#",
+      live: "https://socialbuzzy.netlify.app",
       featured: true,
     },
   ];
