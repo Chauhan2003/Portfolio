@@ -64,7 +64,7 @@ export const Hero = () => {
               delay={400}
               className="flex justify-center sm:justify-start"
             >
-              <a href="/Gagan_Chauhan_resume.pdf" download>
+              <a href="/Gagan_Chauhan_Resume.pdf" download>
                 <Button className="bg-gradient-to-r from-green-600 via-blue-600 to-purple-600 hover:from-green-700 hover:via-blue-700 hover:to-purple-700 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg transition-all duration-300 hover:scale-105 hover-glow shadow-2xl text-md sm:text-lg font-medium font-mono">
                   <Download className="h-5 w-5 mr-2" />
                   ./download-resume.pdf
