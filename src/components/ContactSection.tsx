@@ -1,4 +1,11 @@
-import { Mail, Github, Linkedin, Send } from "lucide-react";
+import {
+  Mail,
+  Github,
+  Linkedin,
+  Send,
+  Code,
+  MessageCircle,
+} from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const ContactSection = () => {
@@ -32,12 +39,24 @@ const ContactSection = () => {
                 I'm always interested in hearing about new projects and
                 opportunities.
               </p>
-              <Button variant="hero" size="lg" asChild>
-                <a href="mailto:chauhangagan.be03@gmail.com">
-                  <Send className="mr-2" />
-                  Say Hello
-                </a>
-              </Button>
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <Button variant="hero" size="lg" asChild>
+                  <a href="mailto:chauhangagan.be03@gmail.com">
+                    <Send className="mr-2" />
+                    Say Hello
+                  </a>
+                </Button>
+                <Button variant="hero-outline" size="lg" asChild>
+                  <a
+                    href="https://wa.me/919056360204"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <MessageCircle className="mr-2" />
+                    WhatsApp
+                  </a>
+                </Button>
+              </div>
               <p className="text-sm text-muted-foreground mt-4">
                 +91 9056360204 • gaganchauhan.netlify.app
               </p>
@@ -58,7 +77,7 @@ const ContactSection = () => {
                 href="https://github.com/Chauhan2003"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-3 px-6 py-3 rounded-xl bg-secondary/50 border border-border/50 text-muted-foreground hover:text-foreground hover:border-primary/50 hover:bg-secondary transition-all duration-300 group"
+                className="flex items-center gap-3 px-4 py-2 rounded-xl bg-secondary/50 border border-border/50 text-muted-foreground hover:text-foreground hover:border-primary/50 hover:bg-secondary transition-all duration-300 group"
               >
                 <Github
                   size={22}
@@ -70,13 +89,25 @@ const ContactSection = () => {
                 href="https://linkedin.com/in/gaganchauhan2003"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-3 px-6 py-3 rounded-xl bg-secondary/50 border border-border/50 text-muted-foreground hover:text-foreground hover:border-primary/50 hover:bg-secondary transition-all duration-300 group"
+                className="flex items-center gap-3 px-4 py-2 rounded-xl bg-secondary/50 border border-border/50 text-muted-foreground hover:text-foreground hover:border-primary/50 hover:bg-secondary transition-all duration-300 group"
               >
                 <Linkedin
                   size={22}
                   className="group-hover:text-primary transition-colors"
                 />
                 <span className="font-medium">LinkedIn</span>
+              </a>
+              <a
+                href="https://leetcode.com/u/chauhann"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 px-4 py-2 rounded-xl bg-secondary/50 border border-border/50 text-muted-foreground hover:text-foreground hover:border-primary/50 hover:bg-secondary transition-all duration-300 group"
+              >
+                <Code
+                  size={22}
+                  className="group-hover:text-primary transition-colors"
+                />
+                <span className="font-medium">LeetCode</span>
               </a>
             </div>
           </div>

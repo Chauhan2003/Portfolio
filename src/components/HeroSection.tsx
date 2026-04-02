@@ -1,4 +1,4 @@
-import { Github, Linkedin, FileText, Mail } from "lucide-react";
+import { Github, Linkedin, FileText, Mail, Code } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Resume from "../assests/Gagan_Chauhan_Resume.pdf";
 
@@ -76,6 +76,15 @@ const HeroSection = () => {
               aria-label="LinkedIn"
             >
               <Linkedin size={22} />
+            </a>
+            <a
+              href="https://leetcode.com/u/chauhann"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-3 rounded-lg bg-secondary/50 border border-border/50 text-muted-foreground hover:text-foreground hover:border-primary/50 hover:bg-secondary transition-all duration-300"
+              aria-label="LeetCode"
+            >
+              <Code size={22} />
             </a>
           </div>
         </div>
