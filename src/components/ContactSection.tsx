@@ -40,13 +40,23 @@ const ContactSection = () => {
                 opportunities.
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                <Button variant="hero" size="lg" asChild>
+                <Button
+                  variant="hero"
+                  size="lg"
+                  asChild
+                  className="w-[180px] sm:w-auto"
+                >
                   <a href="mailto:chauhangagan.be03@gmail.com">
                     <Send className="mr-2" />
                     Say Hello
                   </a>
                 </Button>
-                <Button variant="hero-outline" size="lg" asChild>
+                <Button
+                  variant="hero"
+                  size="lg"
+                  asChild
+                  className="w-[180px] sm:w-auto"
+                >
                   <a
                     href="https://wa.me/919056360204"
                     target="_blank"
@@ -72,12 +82,12 @@ const ContactSection = () => {
             </div>
 
             {/* Social Links */}
-            <div className="flex items-center justify-center gap-4">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
               <a
                 href="https://github.com/Chauhan2003"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-3 px-4 py-2 rounded-xl bg-secondary/50 border border-border/50 text-muted-foreground hover:text-foreground hover:border-primary/50 hover:bg-secondary transition-all duration-300 group"
+                className="flex items-center gap-3 px-4 py-2 rounded-xl bg-secondary/50 border border-border/50 text-muted-foreground hover:text-foreground hover:border-primary/50 hover:bg-secondary transition-all duration-300 group w-[180px] sm:w-auto justify-center"
               >
                 <Github
                   size={22}
@@ -89,7 +99,7 @@ const ContactSection = () => {
                 href="https://linkedin.com/in/gaganchauhan2003"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-3 px-4 py-2 rounded-xl bg-secondary/50 border border-border/50 text-muted-foreground hover:text-foreground hover:border-primary/50 hover:bg-secondary transition-all duration-300 group"
+                className="flex items-center gap-3 px-4 py-2 rounded-xl bg-secondary/50 border border-border/50 text-muted-foreground hover:text-foreground hover:border-primary/50 hover:bg-secondary transition-all duration-300 group w-[180px] sm:w-auto justify-center"
               >
                 <Linkedin
                   size={22}
@@ -101,7 +111,7 @@ const ContactSection = () => {
                 href="https://leetcode.com/u/chauhann"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-3 px-4 py-2 rounded-xl bg-secondary/50 border border-border/50 text-muted-foreground hover:text-foreground hover:border-primary/50 hover:bg-secondary transition-all duration-300 group"
+                className="flex items-center gap-3 px-4 py-2 rounded-xl bg-secondary/50 border border-border/50 text-muted-foreground hover:text-foreground hover:border-primary/50 hover:bg-secondary transition-all duration-300 group w-[180px] sm:w-auto justify-center"
               >
                 <Code
                   size={22}
