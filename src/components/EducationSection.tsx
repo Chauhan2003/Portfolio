@@ -2,18 +2,11 @@ import { GraduationCap, Calendar, Award } from "lucide-react";
 
 const education = [
   {
-    degree: "B.E. Computer Science",
+    degree: "Bachelor of Engineering in Computer Science",
     institution: "Chitkara University",
-    period: "2021 – 2025",
-    score: "CGPA: 8.67/10",
+    period: "2021 - 2025",
+    score: "CGPA: 8.67/10.0",
     type: "university",
-  },
-  {
-    degree: "Higher Secondary Education",
-    institution: "Ryan International School",
-    period: "2021",
-    score: "80%",
-    type: "school",
   },
 ];
 

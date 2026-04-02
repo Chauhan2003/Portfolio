@@ -1,4 +1,4 @@
-import { Mail, Github, Linkedin, MapPin, Send } from "lucide-react";
+import { Mail, Github, Linkedin, Send } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const ContactSection = () => {
@@ -38,6 +38,9 @@ const ContactSection = () => {
                   Say Hello
                 </a>
               </Button>
+              <p className="text-sm text-muted-foreground mt-4">
+                +91 9056360204 • gaganchauhan.netlify.app
+              </p>
             </div>
 
             {/* Divider */}

@@ -1,21 +1,20 @@
-import { Github, ExternalLink, CreditCard, Users } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Github, Video, Users } from "lucide-react";
 
 const projects = [
   {
-    title: "SwiftPay",
-    subtitle: "Virtual Card Engine",
-    icon: CreditCard,
+    title: "VisionIQ",
+    subtitle: "AI Video Analytics Platform",
+    icon: Video,
     description:
-      "A comprehensive virtual card management system with secure REST APIs, role-based access control, and advanced export capabilities.",
+      "Backend platform for AI-powered video analytics that processes live and recorded camera feeds to generate safety and operational insights.",
     features: [
-      "25+ secure REST APIs (Spring Boot, PostgreSQL, JWT)",
-      "XLSX/PDF/CSV export & Excel upload functionality",
-      "Role-Based Access Control (RBAC)",
-      "Flyway database migrations",
-      "AWS S3 & Secrets Manager Integration",
+      "Processed live RTSP cameras and recorded streams using Spring Boot",
+      "Integrated event-driven AI analysis pipelines with AWS SQS",
+      "Delivered real-time dashboards and alerts via WebSockets",
+      "Enabled low-latency live camera viewing with AWS Kinesis Video Streams (WebRTC)",
+      "Optimized stream handling for multiple concurrent viewers",
     ],
-    tech: ["Spring Boot", "PostgreSQL", "JWT", "AWS S3", "Flyway"],
+    tech: ["Spring Boot", "AWS SQS", "WebSockets", "WebRTC", "Kinesis"],
     github: null,
     color: "from-blue-500 to-cyan-500",
   },
@@ -24,13 +23,13 @@ const projects = [
     subtitle: "Social Media Platform",
     icon: Users,
     description:
-      "A full-featured social media platform built with the MERN stack, featuring real-time communication and AI-powered content moderation.",
+      "Full-stack MERN social media application with real-time communication, secure authentication, and AI-assisted moderation.",
     features: [
-      "Real-time feeds, chat & notifications (Socket.io)",
-      "Authentication (JWT, bcryptjs, Google OAuth)",
-      "Cloudinary media uploads & management",
-      "AI-powered moderation system",
-      "Responsive modern UI/UX",
+      "Built with MongoDB, Express, React, Node.js, Tailwind CSS, and Vite",
+      "Implemented real-time feeds, messaging, and notifications using Socket.io",
+      "Secured authentication with JWT, Google OAuth, and email verification",
+      "Added media uploads and moderation using Cloudinary and Multer",
+      "Included basic AI-based caption and content filtering with LLM integration",
     ],
     tech: ["MongoDB", "Express", "React", "Node.js", "Socket.io"],
     github: "https://github.com/Chauhan2003/looply",
