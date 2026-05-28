@@ -6,11 +6,12 @@ const experiences = [
     company: "Prismberry Technologies Pvt Ltd - Noida, UP",
     period: "Oct 2024 - Present",
     achievements: [
-      "Developed and maintained 20+ RESTful APIs using Spring Boot and Spring MVC, documented with Swagger/OpenAPI, improving developer onboarding by 40%.",
-      "Designed scalable microservices-based architecture following Agile/Scrum practices and implemented secure Maker-Checker and multi-level approval workflows using Spring Security.",
-      "Built a low-latency video streaming solution using AWS Kinesis Video Streams (WebRTC) to stream RTSP camera feeds and developed bulk-processing APIs that improved system throughput by 30%.",
-      "Managed MySQL and PostgreSQL databases with Flyway migrations for zero-downtime deployments and schema version control.",
-      "Established CI/CD pipelines with GitHub Actions and Docker, reducing QA feedback cycles by 20% through automated unit and integration testing.",
+      "Developed and maintained 50+ RESTful APIs using Spring Boot and FastAPI, documented with Swagger/OpenAPI, improving developer onboarding by 40%.",
+      "Led backend development for VisionIQ, an AI video analytics platform — architected core services, mentored team members, and drove end-to-end delivery of streaming and event processing modules.",
+      "Built responsive frontend interfaces using React with TypeScript, integrating REST APIs and delivering seamless user experiences across multiple product modules.",
+      "Designed scalable backend architecture with secure multi-level approval workflows and fine-grained RBAC using Spring Security 6 with JWT authentication.",
+      "Built low-latency video streaming using AWS KVS + WebRTC and an async SQS pipeline processing multiple AI detection types concurrently with multi-threaded consumers.",
+      "Integrated AWS services (S3, SQS, SES, KVS) and built multi-format reports (PDF, Excel, CSV) with date-range filtering for operational insights and client reporting.",
     ],
   },
 ];

@@ -1,38 +1,55 @@
-import { Github, Video, Users } from "lucide-react";
+import { Github, Video, CreditCard, Users } from "lucide-react";
 
 const projects = [
   {
     title: "VisionIQ",
-    subtitle: "AI Video Analytics Platform",
+    subtitle: "Video Surveillance Platform · Lead Backend Developer",
+    period: "Nov 2025 – Present",
     icon: Video,
     description:
-      "Backend platform for AI-powered video analytics that processes live and recorded camera feeds to generate safety and operational insights.",
+      "Video surveillance platform supporting real-time monitoring, safety detection (fire, crowd, PPE, fall), and automated alerts across multiple camera feeds.",
     features: [
-      "Processed live RTSP cameras and recorded streams using Spring Boot",
-      "Integrated event-driven AI analysis pipelines with AWS SQS",
-      "Delivered real-time dashboards and alerts via WebSockets",
-      "Enabled low-latency live camera viewing with AWS Kinesis Video Streams (WebRTC)",
-      "Optimized stream handling for multiple concurrent viewers",
+      "Built real-time monitoring with safety detection for fire, crowd, PPE, and fall events across multiple camera feeds",
+      "Developed live streaming using AWS Kinesis Video Streams + WebRTC and an async SQS event pipeline to process and route 9+ detection types with low latency",
+      "Implemented role-based access control, JWT authentication, and real-time analytics dashboard pushed via WebSocket",
+      "Deployed with Docker and automated CI/CD via Jenkins",
     ],
-    tech: ["Spring Boot", "AWS SQS", "WebSockets", "WebRTC", "Kinesis"],
+    tech: ["Spring Boot", "AWS KVS", "WebRTC", "PostgreSQL", "Docker", "Jenkins", "SQS", "WebSocket"],
     github: null,
     color: "from-blue-500 to-cyan-500",
   },
   {
-    title: "Looply",
-    subtitle: "Social Media Platform",
+    title: "Zattix Credit Card System",
+    subtitle: "Corporate Credit Card Platform",
+    period: "Oct 2024 – Mar 2025",
+    icon: CreditCard,
+    description:
+      "Co-branded corporate credit card platform in partnership with multiple banks, enabling card issuance, blocking, tracking, and bulk provisioning with seamless employee expense management.",
+    features: [
+      "Built card issuance, blocking, tracking, and bulk provisioning with seamless employee expense management",
+      "Implemented secured real-time transactions with PCI-DSS aligned security, AES + RSA encryption, and JWT authentication",
+      "Integrated with MasterCard and banking APIs for end-to-end transaction processing",
+      "Designed scalable REST APIs and integrated Apache Kafka, reducing data sync time by 20% across multiple Zappfin products",
+    ],
+    tech: ["Java", "Spring Boot", "PostgreSQL", "Apache Kafka", "MasterCard API", "AES/RSA", "JWT"],
+    github: null,
+    color: "from-emerald-500 to-teal-500",
+  },
+  {
+    title: "Zivora",
+    subtitle: "Social Media App · Solo Full Stack",
+    period: "Feb 2024 – Present",
     icon: Users,
     description:
-      "Full-stack MERN social media application with real-time communication, secure authentication, and AI-assisted moderation.",
+      "Full-stack social media app with user authentication, follow system, private accounts, post creation with image uploads, likes, and personalized feed.",
     features: [
-      "Built with MongoDB, Express, React, Node.js, Tailwind CSS, and Vite",
-      "Implemented real-time feeds, messaging, and notifications using Socket.io",
-      "Secured authentication with JWT, Google OAuth, and email verification",
-      "Added media uploads and moderation using Cloudinary and Multer",
-      "Included basic AI-based caption and content filtering with LLM integration",
+      "Solely designed and developed with user auth, follow system, private accounts, post creation, likes, and personalized feed",
+      "Developed REST APIs with Node.js + Express, MongoDB for data storage, and Cloudinary for media handling",
+      "Integrated Socket.IO for real-time chat notifications",
+      "Built a responsive React.js frontend with Tailwind CSS, Redux Toolkit, and Vite",
     ],
-    tech: ["MongoDB", "Express", "React", "Node.js", "Socket.io"],
-    github: "https://github.com/Chauhan2003/looply",
+    tech: ["React.js", "Node.js", "MongoDB", "Socket.IO", "Cloudinary", "Tailwind CSS", "Redux Toolkit"],
+    github: null,
     color: "from-purple-500 to-pink-500",
   },
 ];
@@ -50,7 +67,7 @@ const ProjectsSection = () => {
           <div className="w-20 h-1 bg-primary mx-auto rounded-full" />
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {projects.map((project, index) => (
             <div
               key={project.title}
@@ -75,6 +92,7 @@ const ProjectsSection = () => {
                       <p className="text-sm text-muted-foreground">
                         {project.subtitle}
                       </p>
+                      <p className="text-xs text-primary/70 mt-0.5">{project.period}</p>
                     </div>
                   </div>
                   {project.github && (

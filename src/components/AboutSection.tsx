@@ -1,50 +1,94 @@
-import { Code2, Database, Server, Cloud, Wrench, Layers } from "lucide-react";
+import { Code2, Database, Server, Cloud, Wrench, Layers, Brain, Monitor } from "lucide-react";
 
 const skillCategories = [
   {
     title: "Languages",
     icon: Code2,
-    skills: ["Java", "Python", "SQL"],
+    skills: ["Java", "Python", "JavaScript", "TypeScript", "SQL"],
   },
   {
-    title: "Frameworks",
+    title: "Frontend",
+    icon: Monitor,
+    skills: [
+      "React.js",
+      "Next.js",
+      "Vue",
+      "HTML5",
+      "CSS3",
+      "Tailwind CSS",
+      "Redux Toolkit",
+      "Socket.IO",
+      "Axios",
+    ],
+  },
+  {
+    title: "Backend",
     icon: Layers,
     skills: [
-      "Spring Framework",
       "Spring Boot",
       "Spring MVC",
       "Spring Security",
+      "Node.js",
+      "Express.js",
+      "FastAPI",
+      "REST APIs",
+      "Microservices",
       "Hibernate",
       "JPA",
-      "React.js",
-      "Node.js",
+      "Mongoose",
     ],
   },
   {
     title: "Databases",
     icon: Database,
-    skills: ["MySQL", "PostgreSQL", "MongoDB"],
+    skills: ["MySQL", "PostgreSQL", "MongoDB", "Redis"],
+  },
+  {
+    title: "AI & LLM",
+    icon: Brain,
+    skills: [
+      "LangChain",
+      "Groq AI",
+      "Gemini API",
+      "OpenAI API",
+      "RAG",
+    ],
+  },
+  {
+    title: "Cloud & DevOps",
+    icon: Cloud,
+    skills: [
+      "AWS EC2",
+      "AWS S3",
+      "AWS SQS",
+      "AWS Lambda",
+      "AWS KVS",
+      "Docker",
+      "Kubernetes",
+      "Jenkins",
+      "GitHub Actions",
+      "Linux",
+      "Nginx",
+    ],
   },
   {
     title: "Tools",
     icon: Wrench,
     skills: [
+      "Git",
       "Flyway",
       "Swagger/OpenAPI",
       "Postman",
-      "Gemini API",
-      "LLM Integration",
+      "Maven",
+      "Cloudinary",
+      "Apache POI",
+      "Kafka",
     ],
-  },
-  {
-    title: "Cloud & Services",
-    icon: Cloud,
-    skills: ["AWS Kinesis Video Streams", "AWS SQS", "Docker", "Linux"],
   },
   {
     title: "Others",
     icon: Server,
-    skills: ["Microservices", "REST APIs", "CI/CD", "Git", "GitHub"],
+    skills: ["WebRTC", "WebSocket", "JWT", "RBAC", "CI/CD", "PCI-DSS"],
   },
 ];
 
@@ -61,7 +105,7 @@ const AboutSection = () => {
           <div className="w-20 h-1 bg-primary mx-auto rounded-full" />
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-start">
+        <div className="flex flex-col gap-12">
           {/* About Text */}
           <div className="glass-card p-8 hover-glow">
             <p className="text-muted-foreground leading-relaxed text-lg mb-6">
@@ -69,24 +113,27 @@ const AboutSection = () => {
               <span className="text-foreground font-medium">
                 Software Engineer
               </span>{" "}
-              with 1.5+ years of experience building scalable microservices and
-              RESTful APIs using{" "}
-              <span className="text-primary">Spring Boot</span> and cloud-native
+              with professional experience building scalable backends and
+              full-stack platforms using{" "}
+              <span className="text-primary">Spring Boot</span>,{" "}
+              <span className="text-primary">FastAPI</span>, and cloud-native
               AWS services.
             </p>
             <p className="text-muted-foreground leading-relaxed text-lg mb-6">
-              I specialize in{" "}
-              <span className="text-foreground font-medium">
-                backend engineering
-              </span>
-              , API design, database management, and containerized deployments,
-              with hands-on experience across MySQL, PostgreSQL, and MongoDB.
+              At Prismberry Technologies, I led backend development for{" "}
+              <span className="text-foreground font-medium">VisionIQ</span> — a
+              video surveillance platform — architecting core services,
+              mentoring team members, and delivering streaming, event processing,
+              and multi-format reporting systems.
             </p>
             <p className="text-muted-foreground leading-relaxed text-lg">
-              At Prismberry Technologies, I&apos;ve improved system throughput
-              by 30%, reduced deployment and QA cycles through CI/CD automation,
-              and delivered low-latency streaming systems using AWS Kinesis
-              Video Streams.
+              I work across the full stack with{" "}
+              <span className="text-foreground font-medium">
+                React, TypeScript, Node.js
+              </span>
+              , and have hands-on experience with real-time WebRTC streaming,
+              multi-tenant RBAC, and cloud deployments using Docker,
+              Kubernetes, and Jenkins.
             </p>
           </div>
 

@@ -4,9 +4,16 @@ const education = [
   {
     degree: "Bachelor of Engineering in Computer Science",
     institution: "Chitkara University",
-    period: "2021 - 2025",
+    period: "2021 – 2025",
     score: "CGPA: 8.67/10.0",
     type: "university",
+  },
+  {
+    degree: "Class XII – CBSE",
+    institution: "Ryan International School",
+    period: "2020 – 2021",
+    score: "Percentage: 90%",
+    type: "school",
   },
 ];
 

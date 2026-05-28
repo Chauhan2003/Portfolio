@@ -31,14 +31,14 @@ const HeroSection = () => {
 
           {/* Role */}
           <h2 className="text-xl sm:text-2xl md:text-3xl text-muted-foreground font-medium mb-6 animate-fade-in-up animation-delay-200">
-            Software Engineer <span className="text-primary">|</span> Backend
-            Developer
+            Full Stack Developer
           </h2>
 
           {/* Tagline */}
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 animate-fade-in-up animation-delay-300">
-            Building scalable microservices, REST APIs, and low-latency cloud
-            systems with Spring Boot and AWS.
+            Building scalable backends and full-stack products with Spring Boot,
+            React, Node.js, FastAPI, and AI integration using LangChain, Groq AI,
+            Gemini API, and OpenAI API.
           </p>
 
           {/* CTAs */}
